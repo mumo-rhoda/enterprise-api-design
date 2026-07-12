@@ -3,7 +3,7 @@
 > A comprehensive reference guide for designing, governing, and documenting enterprise-grade APIs.
 
 Built from production experience integrating SAP, Coupa, Salesforce, and cloud platforms using MuleSoft.  
-Shared by the **MuleSoft Meetup Nairobi** community and **Citova** integration consultancy.
+Shared by the **MuleSoft Meetup Nairobi** community and **Castriq** integration consultancy.
 
 ---
 
