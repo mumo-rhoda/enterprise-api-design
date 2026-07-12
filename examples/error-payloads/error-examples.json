@@ -1,0 +1,58 @@
+{
+    "_comment": "Enterprise error payload examples following RFC 7807",
+
+    "validation_error_400": {
+        "type": "https://api.acme.com/errors/validation-error",
+        "title": "Validation Error",
+        "status": 400,
+        "detail": "One or more fields failed validation.",
+        "errorCode": "VALIDATION_ERROR",
+        "correlationId": "550e8400-e29b-41d4-a716-446655440000",
+        "timestamp": "2025-06-25T10:30:00Z",
+        "errors": [
+            { "field": "amount",   "message": "Must be greater than 0",           "value": -500 },
+            { "field": "currency", "message": "Must be a valid ISO currency code", "value": "KSH" }
+        ]
+    },
+
+    "not_found_404": {
+        "type": "https://api.acme.com/errors/not-found",
+        "title": "Resource Not Found",
+        "status": 404,
+        "detail": "Customer with ID 'C-999' does not exist.",
+        "errorCode": "NOT_FOUND_ERROR",
+        "correlationId": "7b4e9120-f38a-42bc-8b11-aa3344556677",
+        "timestamp": "2025-06-25T10:31:00Z"
+    },
+
+    "business_rule_422": {
+        "type": "https://api.acme.com/errors/business-rule-violation",
+        "title": "Business Rule Violation",
+        "status": 422,
+        "detail": "Insufficient account balance. Available: KES 200.00, Requested: KES 5000.00.",
+        "errorCode": "INSUFFICIENT_BALANCE",
+        "correlationId": "aa112233-bb44-55cc-dd66-ee7788990011",
+        "timestamp": "2025-06-25T10:32:00Z"
+    },
+
+    "rate_limit_429": {
+        "type": "https://api.acme.com/errors/rate-limit",
+        "title": "Rate Limit Exceeded",
+        "status": 429,
+        "detail": "You have exceeded 100 requests per minute. Retry after 45 seconds.",
+        "errorCode": "RATE_LIMIT_ERROR",
+        "correlationId": "bb223344-cc55-66dd-ee77-ff8899001122",
+        "timestamp": "2025-06-25T10:33:00Z",
+        "retryAfter": 45
+    },
+
+    "downstream_502": {
+        "type": "https://api.acme.com/errors/downstream-error",
+        "title": "Downstream Service Unavailable",
+        "status": 502,
+        "detail": "The SAP system is temporarily unavailable. Please retry in a few minutes.",
+        "errorCode": "DOWNSTREAM_ERROR",
+        "correlationId": "cc334455-dd66-77ee-ff88-001122334455",
+        "timestamp": "2025-06-25T10:34:00Z"
+    }
+}

@@ -1,0 +1,22 @@
+### Level 0 — The Swamp of POX (RPC over HTTP)
+### Everything goes through one endpoint, method is always POST
+### No use of HTTP semantics
+
+POST http://api.example.com/service HTTP/1.1
+Content-Type: application/json
+
+{ "action": "getCustomer", "id": "C-001" }
+
+---
+
+POST http://api.example.com/service HTTP/1.1
+Content-Type: application/json
+
+{ "action": "createCustomer", "name": "Acme Ltd", "email": "acme@example.com" }
+
+---
+
+POST http://api.example.com/service HTTP/1.1
+Content-Type: application/json
+
+{ "action": "deleteCustomer", "id": "C-001" }
