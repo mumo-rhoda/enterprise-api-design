@@ -22,7 +22,7 @@ With standards:
 - API Manager policies apply consistently across all APIs
 - Business units can compose APIs into new products without rework
 
-**Real example:** At E.ON, MuleSoft integrates SAP, Coupa, and 20+ enterprise systems.  
+**Real example:** MuleSoft can integrate SAP, Coupa, and 20+ enterprise systems.  
 Without API-led connectivity standards, each integration would be a point-to-point spaghetti connection.  
 With API-led, a single SAP System API serves data to three Process APIs and six Experience APIs — built once, reused everywhere.
 
